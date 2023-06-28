@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Validation {% endblock %}
+
+{% block content %}
+<h1> Validation </h1>
+    <form method="post">
+        <label> Utilisateur EcoleDirecte : </label>
+        <label> Mot de passe :</label>
+        <input name="password" type="password"><br>
+        <button type="submit"> S'inscrire</button>
+    </form>
+
+<h1> Profil de l'étudiant </h1>
+Nom : {{ etudiantAPI.getNom()}} <br>
+    Prenom: {{ etudiantAPI.getPrenom() }}<br>
+    Classe: {{ etudiantAPI.getProfile()["classe"]["code"] }}
+{% endblock %}

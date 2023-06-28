@@ -1,0 +1,111 @@
+#pnl{
+    position: absolute;
+    width: 1500px;
+    height: 800px;
+    background-color: burlywood;
+}
+#Gauche {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background: linear-gradient(to bottom right, #316697, skyblue);
+    background-color: #0f8fd1;
+}
+#Droite {
+    background-color: #ffffff;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+#LogoOrt {
+    position: absolute;
+    width: 17%;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #000000;
+    border-radius: 0px 0px 44px 0px;
+}
+#Bienvenue {
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 55px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 500%;
+    text-align: center;
+    color: #164B7C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#titre{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 450%;
+    color: #FFFFFF;
+}
+#LogoOrtHelp {
+    position: absolute;
+    width: 12%;
+    height: 200px;
+    margin-left: 8%;
+    margin-top: 400px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 23px;
+
+}
+
+
+
+
+#centreDroite{
+    display: block;
+    margin-left: 23%;
+    margin-top: 200px;
+    width: 325px;
+}
+#buttonDeco{
+    margin-top: -60px;
+    margin-left: 1360px;
+    width: 150px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-style: none;
+    color: white;
+}
+
+#buttonDeco:active{
+    background: linear-gradient(to top left, yellow, red);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #316697;
+    border-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #7dc2e2;
+}
+#Deco {
+    float: right;
+}

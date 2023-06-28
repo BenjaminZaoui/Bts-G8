@@ -1,0 +1,33 @@
+{% block title %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="/asset/succes.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block content %}
+<body>
+<div id="pnl">
+    <div id="Gauche">
+        <img id="LogoOrt" src="asset/LogoOrt.png">
+        <H1 id="titre">HelpOrt</H1>
+        <img src="asset/LogoOrtHelp.png" id="LogoOrtHelp">
+    </div>
+    <div id="Droite">
+        <h1 id="Felicitation">Félicitation</h1>
+        <div id="centreDroite">
+            <h1 id="Termine">C'est terminé !</h1>
+            <p id="texteIdentifiant">Un compte HelpOrt a été créé:</p>
+            <img src="asset/minions-youpi.gif" id="succes" alt="GIF animé">
+            <p id="consultation">Veuillez consultez vos email pour plus d'information</p>
+            <a id="retour" href="/">retour à l'accueil</a>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

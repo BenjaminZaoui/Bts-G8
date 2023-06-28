@@ -1,0 +1,52 @@
+
+{% block title %}
+    <html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="/asset/Inscription.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block content %}
+    <body>
+    <div id="pnl">
+        <div id="Gauche">
+            <img id="LogoOrt" src="/asset/LogoOrt.png">
+            <H1 id="titre">HelpOrt</H1>
+            <img src="/asset/LogoOrtHelp.png" id="LogoOrtHelp">
+        </div>
+        <div id="Droite">
+            <h1 id="Bienvenue">Bienvenue</h1>
+            <div id="CentreDroit">
+                <form method="post">
+                    <p id="TextEcoleDirect">Saisissez votre identifiant école direct</p>
+                    <input name="ChampsIdEcoleDirect" class="textebutton" id="ChampsIdEcoleDirect" type="text">
+
+                    <p id="TexteMotPasseEcoleDirect">Saisissez votre mot de passe ecole direct</p>
+                    <input name="ChampsMotPasseEcoleDirect" id="ChampsMotPasseEcoleDirect" class="textebutton" type="password">
+
+                    <p id="TextePseudo">Saisissez votre identifiant HelpOrt</p>
+                    <input name="ChampsPseudo" id="ChampsPseudo" class="textebutton" type="text">
+
+                    <p id="TexteMotPasseHelpOrt">Saisissez votre nouveau mot de passe</p>
+                    <input name="ChampsMotPasse" id="ChampsMotPasseHelpOrt" class="textebutton" type="password">
+                    <p id="TexteConfirmeMotPasse">Confirmez votre mot de passe</p>
+                    <input name="ChampsConfirmeMotPasse" id="ChampsConfirmeMotPasse" class="textebutton" type="password">
+
+                    <input name="inscription" id="BoutonInscription" class="textebutton" value="inscription" type="submit">
+                    <a id="lienAccueil" href="/">Acceuil</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if error %}
+        <script>
+            alert("{{ error }}")
+        </script>
+    {% endif %}
+    </body>
+    </html>
+{% endblock %}
+

@@ -1,0 +1,45 @@
+
+{% block title %}
+    <html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="/asset/home.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block content %}
+<body>
+<script>
+
+</script>
+<div id="pnl">
+    <div id="Gauche">
+        <img id="LogoOrt" src="/asset/LogoOrt.png">
+        <H1 id="titre">HelpOrt</H1>
+        <img src="/asset/LogoOrtHelp.png" id="LogoOrtHelp">
+    </div>
+    <div id="Droite">
+        <h1 id="Bienvenue">Bienvenue</h1>
+        <div id="centreDroite">
+            <form method="post">
+        <p id="texteIdentifiant">Identifiant</p>
+        <input name="utilisateur" id="champsId" type="text" class="textebutton">
+        <p id="texteMotPasse">Mot de passe</p>
+        <input name="password" id="champsMotsPasse" type="password" class="textebutton">
+        <a id="lienMotPasse" href="https://www.codeur.com/blog/wp-content/uploads/2019/05/corriger-erreur-404.jpg">mot de passe</a>
+        <button id="bouttonConnex" class="textebutton">Connexion</button>
+            <a id="lieninscription" href="https://www.codeur.com/blog/wp-content/uploads/2019/05/corriger-erreur-404.jpg">inscription</a>
+            </form>
+            <h1>Profil de l'etudiant</h1>
+            Nom: {{ etudiantAPI.getNom() }}<br>
+            Prenom: {{ etudiantAPI.getPrenom() }}<br>
+            Classe: {{ etudiantAPI.getProfile()["classe"]["code"] }}
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
+

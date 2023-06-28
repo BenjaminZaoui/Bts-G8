@@ -1,0 +1,47 @@
+
+{% block title %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="/asset/home.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block content %}
+<body>
+<script>
+
+</script>
+<div id="pnl">
+    <div id="Gauche">
+        <img id="LogoOrt" src="/asset/LogoOrt.png">
+        <H1 id="titre">HelpOrt</H1>
+        <img src="/asset/LogoOrtHelp.png" id="LogoOrtHelp">
+    </div>
+
+    <div id="Droite">
+        <h1 id="Bienvenue">Bienvenue</h1>
+        <div id="centreDroite">
+            <form method="post">
+                <p id="texteIdentifiant">Identifiant</p>
+                <input name="champsId" id="champsId" type="text" class="textebutton">
+                <p id="texteMotPasse">Mot de passe</p>
+                <input name="champsMotsPasse" id="champsMotsPasse" type="password" class="textebutton">
+                <a id="lienMotPasse" href="asset/minions-youpi.gif">mot de passe oublié</a>
+                <button id="bouttonConnex" class="textebutton">Connexion</button>
+                <a id="lieninscription" href="/inscription">inscription</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% if error %}
+    <script>
+        alert("{{ error }}")
+    </script>
+{% endif %}
+</body>
+</html>
+{% endblock %}
+

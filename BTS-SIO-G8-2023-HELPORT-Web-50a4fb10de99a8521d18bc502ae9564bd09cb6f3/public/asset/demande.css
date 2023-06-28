@@ -1,0 +1,171 @@
+#pnl{
+    position: absolute;
+    width: 1500px;
+    height: 900px;
+    background-color: burlywood;
+}
+#Termine{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+#Gauche {
+    width: 30%;
+    height: 900px;
+    float: left;
+    background: linear-gradient(to bottom right, #316697, skyblue);
+    background-color: #0f8fd1;
+}
+#Droite {
+    background-color: #ffffff;
+    width: 70%;
+    height: 900px;
+    float: right;
+}
+#LogoOrt {
+    position: absolute;
+    width: 17%;
+    height: 16%;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #000000;
+    border-radius: 0px 0px 44px 0px;
+}
+#Felicitation {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 4%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 415%;
+    text-align: center;
+    color: #164B7C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#titre{
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 17%;
+    font-weight: 400;
+    font-size: 450%;
+    color: #FFFFFF;
+}
+#LogoOrtHelp {
+    position: absolute;
+    width: 12%;
+    height: 24%;
+    margin-left: 8%;
+    margin-top: 27%;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 23px;
+
+}
+p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+label{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#centreDroite {
+    margin-left: 23%;
+    margin-top: 13%;
+    width: 60%;
+    height: 730px;
+    background-color: #316697;
+    border-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 23px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+.textebutton {
+    margin-left: 9%;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 23px;
+}
+#retour {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 32%;
+}
+
+#lblintituler{
+    margin-top: 6%;
+    margin-left: 22%;
+}
+#lblDate{
+    margin-top: 35%;
+    margin-left: 142px;
+}
+#clendrier{
+    margin-left: 142px;
+    margin-top: 77%;
+}
+#Champsintituler{
+    margin-top: 10%;
+    margin-left: 22%;
+}
+#ListeMatiere {
+    margin-top: 22%;
+    margin-left: 142px;
+}
+#lblDescription {
+    margin-top: 24%;
+    margin-left: 14%;
+}
+#ChampsDescription{
+    margin-top: 38%;
+    margin-left: 14%;
+    height: 200px;
+    width: 400px;
+}
+
+#bouttonValidation{
+    margin-top: 100%;
+    margin-left: 23%;
+}
+textarea {
+    resize: none;
+}
+#bouttonValidation:hover {
+    background-color: antiquewhite;
+}
+.textebutton:hover{
+    background-color: antiquewhite;
+}
+#bouttonValidation:active{
+    background-color: #2dace2;
+}
+#heureBox{
+    text-align: center;
+    margin-left: 144px;
+    margin-top: 88%;
+
+}

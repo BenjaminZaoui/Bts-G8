@@ -1,0 +1,55 @@
+
+{% block title %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="/asset/demande.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block content %}
+<body>
+<div id="pnl">
+    <div id="Gauche">
+        <img id="LogoOrt" src="asset/LogoOrt.png">
+        <H1 id="titre">HelpOrt</H1>
+        <img src="asset/LogoOrtHelp.png" id="LogoOrtHelp">
+    </div>
+    <form method="post">
+    <div id="Droite">
+        <h1 id="Felicitation">Création d'une demande</h1>
+        <div id="centreDroite">
+            <label id="lblintituler">intitulé</label>
+            <input name="Champsintituler" type="text" id="Champsintituler" class="textebutton">
+
+
+            <select  type="text" name="ListeMatiere" id="ListeMatiere" class="textebutton">
+                <option value="math">math</option>
+                <option value="anglais">anglais</option>
+                <option value="francais">français</option>
+            </select>
+            <label id="lblDescription">Description</label>
+            <textarea name="ChampsDescription" id="ChampsDescription" class="textebutton"></textarea>
+
+            <label id="lblDate">choix de la date</label>
+            <input name="clendrier" id="clendrier" type="date" class="textebutton">
+            <input name="heureBox" type="time" class="textebutton" id="heureBox">
+
+            <button id="bouttonValidation" class="textebutton">validé la demande</button>
+            <a id="retour" href="/Acceuil">retour à l'accueil</a>
+        </div>
+
+    </div>
+    </form>
+</div>
+{% if error %}
+    <script>
+        alert("{{ error }}")
+    </script>
+{% endif %}
+</body>
+</html>
+{% endblock %}
+
