@@ -20,7 +20,7 @@ class ModifierModel
      */
     public function getInfoById(int $seanceId)
     {
-        $requete = $this->bdd->prepare('SELECT  seance.ID, seance.MATIERE, seance.DESCRIPTION, seance.NATURE,seance.Date, seance.Heure, seance.etat
+        $requete = $this->bdd->prepare('SELECT  seance.ID, seance.Intitule, seance.MATIERE, seance.DESCRIPTION, seance.NATURE,seance.Date, seance.Heure, seance.etat
 FROM seance
 INNER JOIN user ON user.ID = seance.id_assiste
 WHERE seance.ID = ?');
@@ -31,6 +31,7 @@ WHERE seance.ID = ?');
         {
             $demande = new demandeTab();
             $demande->setSeanceId($value["ID"]);
+            $demande->setIntitule($value["Intitule"]);
             $demande->setMatiere($value["MATIERE"]);
             $demande->setDescription($value["DESCRIPTION"]);
             $demande->setNature($value["NATURE"]);

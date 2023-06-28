@@ -16,6 +16,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $rout
     $route->addRoute(['GET','POST'], '/demande', 'Apps\Controller\Users\DemandeController');
     $route->addRoute(['GET','POST'], '/Acceuil', 'Apps\Controller\Users\AcceuilTableauAssisterController');
     $route->addRoute(['GET','POST'], '/modifier', 'Apps\Controller\Users\ModifierController');
+    $route->addRoute(['GET','POST'], '/suppr', 'Apps\Controller\Users\DeleteController');
 });
 // Dispatcher -> Couche view
 echo FastRouteCore::getDispatcher($dispatcher);

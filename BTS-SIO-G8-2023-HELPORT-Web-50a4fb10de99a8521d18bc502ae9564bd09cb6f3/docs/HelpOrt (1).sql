@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : db:3306
--- Généré le : mar. 27 juin 2023 à 16:34
+-- Généré le : mer. 28 juin 2023 à 17:19
 -- Version du serveur : 8.0.32
 -- Version de PHP : 8.0.19
 
@@ -46,10 +46,9 @@ CREATE TABLE `seance` (
 
 INSERT INTO `seance` (`ID`, `Matiere`, `Description`, `Nature`, `Date`, `Heure`, `id_assistant`, `id_assiste`, `etat`, `Intitule`) VALUES
 (1, 'français', 'blabla 1', 'jsp', '2023-06-12', '18:40:24', '5', '1', 'en cours de traitement ', 'le Poulet'),
-(2, 'math', 'blbla 2', 'jsp', '2023-07-07', '11:18:27', '6', '1', 'traité', 'le canard laqué'),
-(3, 'histoire', 'UZABCAEZJPFNAJKOFNHBGF HEZBGFZEPNFHBrnzhjG', 'jsp', '2023-08-18', '14:19:24', '2', '1', 'en cours de traitement ', 'le ratZ'),
 (7, 'math', 'lknljhg', 'jsp', '2023-06-29', '20:48:00', '0', '1', 'en attante d\'un assistant', 'pedidosYa'),
-(10, 'math', '4fromage', 'jsp', '2023-06-29', '22:19:00', '0', '1', 'en attante d\'un assistant', 'PizzaHut');
+(12, 'math', '--->--->--->--->', 'jsp', '2023-07-01', '06:46:00', '0', '1', 'en attante d\'un assistant', 'OUROBOROS '),
+(13, 'math', 'MI GUSTAS Y MANANAS ', 'jsp', '2023-06-30', '00:46:00', '0', '1', 'en attante d\'un assistant', 'AMIGOS');
 
 -- --------------------------------------------------------
 
@@ -76,7 +75,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`ID`, `NOM`, `PRENOM`, `EMAIL`, `ROLE`, `Pseudo`, `Niveau`, `MotDePasse`, `DateDeCreation`, `DateMiseAJour`, `typeCompte`) VALUES
-(1, 'ZAOUI', 'Benjamin', 'benjaminzaoui6@gmail.com', '', 'Bzaoui', '1TSSIOB', 'f0b661755f30bea0000b01e18c4fe28248c76dc77013355377cc0ea420c7ffd044dc7683deb3bd44b610b9c6ed92de37662209eaa60a82b91eb1e5915690cd4e', '2023-06-23', '', 'E');
+(1, 'ZAOUI', 'Benjamin', 'benjaminzaoui6@gmail.com', '', 'Bzaoui', '1TSSIOB', 'f0b661755f30bea0000b01e18c4fe28248c76dc77013355377cc0ea420c7ffd044dc7683deb3bd44b610b9c6ed92de37662209eaa60a82b91eb1e5915690cd4e', '2023-06-28', '', 'E');
 
 --
 -- Index pour les tables déchargées
@@ -102,13 +101,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `seance`
 --
 ALTER TABLE `seance`
-  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

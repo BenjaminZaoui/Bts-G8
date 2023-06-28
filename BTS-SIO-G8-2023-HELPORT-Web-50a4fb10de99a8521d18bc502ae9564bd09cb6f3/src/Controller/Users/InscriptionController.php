@@ -120,7 +120,6 @@ public function verifMotDePasse($unMDP){
             ]);
         }
         elseif ($verif == true){
-          //TODO faire page confirme inscription
             $twig = TwigCore::getEnvironment();
             echo $twig->render('home\succes.html.twig', [
                 'visu'=>false

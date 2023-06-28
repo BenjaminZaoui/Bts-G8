@@ -79,7 +79,7 @@ class DemandeController implements ControllerInterface
                 throw new DateException();
             }
             elseif ($acceuilTabModel->ComptNbDemande($_SESSION['authentification'])==false){
-                $crudModel->CreateDemande($_POST['ListeMatiere'],$_POST['ChampsDescription'],"jsp",$_POST['clendrier'],$_POST['heureBox'],0,$_SESSION['authentification'],"en attante d'un assistant",$_POST['Champsintituler']);
+                $crudModel->CreateDemande($_POST['ListeMatiere'],$_POST['ChampsDescription'],"jsp",$_POST['clendrier'],$_POST['heureBox'],$_SESSION['authentification'],"en attante d'un assistant",$_POST['Champsintituler']);
             }
             else {
 

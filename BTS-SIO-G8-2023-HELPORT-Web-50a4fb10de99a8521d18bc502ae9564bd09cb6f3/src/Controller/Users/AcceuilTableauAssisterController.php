@@ -29,8 +29,10 @@ class AcceuilTableauAssisterController implements ControllerInterface
      */
     public function execute(Request $request)
     {
-        $demandeSelectionnee ="";
+        unset($_SESSION["IDDEMANDE"]);
+
         try {
+            $demandeSelectionnee ="";
             $demande = new demandeTab();
             $homeModel = new HomeModel();
             $_SESSION['Time']="T";
@@ -71,9 +73,7 @@ class AcceuilTableauAssisterController implements ControllerInterface
             header("Location: /");
             exit();
         }
-        //TODO stylisé le boutton modifier
         if ($errorCode !=0){
-            var_dump($errorCode);
             echo $twig->render('home/acceuilTabAssister.twig', [
                 'visu' => false,
                 'demandes'=>$demandeModel->getFechAllForUser($_SESSION['authentification']),

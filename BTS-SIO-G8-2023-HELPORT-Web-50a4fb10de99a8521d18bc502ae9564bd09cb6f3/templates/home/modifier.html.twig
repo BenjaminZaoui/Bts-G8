@@ -19,10 +19,10 @@
     </div>
     <form method="post">
     <div id="Droite">
-        <h1 id="Felicitation">Création d'une demande</h1>
+        <h1 id="Felicitation">Modification d'une demande</h1>
         <div id="centreDroite">
             <label id="lblintituler">intitulé</label>
-            <input name="Champsintituler" type="text" id="Champsintituler" class="textebutton" value="{{ demande.getIntitule }}">
+            <input name="Champsintituler" type="text" id="Champsintituler" class="textebutton" value="{{ intitule }}">
 
 
             <select  type="text" name="ListeMatiere" id="ListeMatiere" class="textebutton">
@@ -31,14 +31,15 @@
                 <option value="francais">français</option>
             </select>
             <label id="lblDescription">Description</label>
-            <textarea name="ChampsDescription" id="ChampsDescription" class="textebutton">{{ demande.getDescription }}</textarea>
+            <textarea name="ChampsDescription" id="ChampsDescription" class="textebutton">{{ description }}</textarea>
 
             <label id="lblDate">choix de la date</label>
-            <input name="clendrier" id="clendrier" type="date" value="{{ demande.getDate }}" class="textebutton">
-            <input name="heureBox" type="time" class="textebutton" id="heureBox" value="{{ demande.getHeure }}">
+            <input name="clendrier" id="clendrier" type="date" value="{{ date }}" class="textebutton">
+            <input name="heureBox" type="time" class="textebutton" id="heureBox" value="{{ heure }}">
 
             <button id="bouttonValidation" class="textebutton">validé la demande</button>
             <a id="retour" href="/Acceuil">retour à l'accueil</a>
+            <a id="suppr" href="/suppr">supprimer la demande</a>
         </div>
 
     </div>
